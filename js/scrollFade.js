@@ -1,13 +1,13 @@
 $(window).scroll(function() {  
 
     var position = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다.  
-    console.log(position);
+    // console.log(position);
 
     $(window).scroll(function() {  
 
     var position = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다. 
 
-    if (position >= 969){
+    if (position >= 500){
     $('.card_aside').fadeIn('slow');
     }
 
@@ -25,6 +25,10 @@ $(window).scroll(function() {
 
     if (position >= 5168){
         $('#government_area').fadeIn('slow');
+    }
+
+    if (position >= 5983){
+        $('#PHP_area').fadeIn('slow');
     }
 
     if (position >= 7172){
